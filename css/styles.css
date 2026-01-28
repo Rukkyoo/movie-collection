@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fafafc;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    color: black;
+    background-color: #fafafc;
+    padding: 15px;
+    text-align: center;
+    border-bottom: #f0f0f2 2px solid;
+}
+
+.movie-section-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 20px 30px;
+    justify-content: space-between;
+    height: 20vh;
+    margin-top: 20px;
+}
+
+.explore-movies-text {
+    font-size: 34px;
+    font-weight: 5000;
+    margin-bottom: 10px;
+}
+
+.genre-tab {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+#movie-genre {
+    /* background-color: #0ea5a4; */
+    background-color: #ffffff;
+    border: 2px solid #f0f0f2;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+}
+
+#movie-genre:hover {
+    background-color: #0ea5a4;
+    color: white;
+    border: none;
+}
+
+#movie-genre:focus {
+    background-color: #0ea5a4;
+    color: white;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: #f0f0f2 2px solid;
+    margin-top: 20px;
+    background-color: #fafafc;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
