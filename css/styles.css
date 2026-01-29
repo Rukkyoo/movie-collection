@@ -22,7 +22,7 @@ header {
     flex-direction: column;
     padding: 20px 10px 20px 30px;
     justify-content: space-between;
-    height: 20vh;
+    height: 90vh;
     margin-top: 20px;
 }
 
@@ -35,12 +35,13 @@ header {
 .genre-tab {
     margin-bottom: 20px;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    overflow-x: auto;
     padding-bottom: 10px;
+    height: 100px;
 }
 
-#movie-genre {
+.movie-genre-btn {
     /* background-color: #0ea5a4; */
     background-color: #ffffff;
     border: 2px solid #f0f0f2;
@@ -51,30 +52,98 @@ header {
     color: black;
 }
 
-#movie-genre:hover {
+.movie-genre-btn:hover {
     background-color: #0ea5a4;
     color: white;
     border: none;
 }
 
-#movie-genre:focus {
+.movie-genre-btn:focus {
     background-color: #0ea5a4;
     color: white;
     border: none;
 }
+
+
+.movie-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: stretch;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+}
+
+.movie-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 2px solid #f0f0f2;
+    padding: 16px 18px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.movie-card-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.movie-prop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f1f1f;
+    line-height: 1.2;
+}
+
+.movie-year {
+    background-color: rgb(220, 218, 218);
+    color: #5d5d5f;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.movie-genre {
+    font-size: 12px;
+    color: #0ea5a4;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.movie-plot {
+    font-size: 14px;
+    color: #4b4b4b;
+    line-height: 1.5;
+    text-align: justify;
+}
+
 
 footer {
     text-align: center;
     padding: 15px;
     border-top: #f0f0f2 2px solid;
-    margin-top: 20px;
     background-color: #fafafc;
     color: black;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-.movie-cards-container {
-    margin-top: 50px;
 }
